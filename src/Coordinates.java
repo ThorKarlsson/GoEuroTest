@@ -1,0 +1,27 @@
+/**
+ * Created by IntelliJ IDEA.
+ * User: Toggi
+ * Date: 7.12.2013
+ * Time: 18:12
+ * To change this template use File | Settings | File Templates.
+ */
+public class Coordinates {
+    private double latitude;
+    private double longitude;
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+}
