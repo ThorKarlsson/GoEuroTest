@@ -20,12 +20,12 @@ public class CSVCreator {
 
         FileWriter writer = new FileWriter(locationFile);
         for(Location location : locations){
-            writer.write(location.get_type());
-            writer.write(location.get_id());
-            writer.write(location.getName());
-            writer.write(location.getType());
-            writer.write(String.valueOf(location.getGeo_position().getLatitude()));
-            writer.write(String.valueOf(location.getGeo_position().getLongitude()));
+            writer.write(location.get_type()+",");
+            writer.write(location.get_id()+",");
+            writer.write(location.getName()+",");
+            writer.write(location.getType()+",");
+            writer.write(String.valueOf(location.getGeo_position().getLatitude())+",");
+            writer.write(String.valueOf(location.getGeo_position().getLongitude())+"\n");
         }
 
         writer.close();
